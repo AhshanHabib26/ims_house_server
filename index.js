@@ -21,7 +21,6 @@ const client = new MongoClient(uri, {
 
 async function ims_house(){
     try{
-
         await client.connect()
 
         const userItemsCollection = client
@@ -80,7 +79,7 @@ async function ims_house(){
 ims_house().catch(console.dir())
 
 app.get("/", (req, res) => {
-  res.send("I Am Ahshan Habib!");
+  res.send("I am Ahshan Habib! IMS House Project.");
 });
 
 app.listen(port);
